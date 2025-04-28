@@ -50,7 +50,7 @@ const Dashboard = () => {
                   <th className="p-4 text-left">Username</th>
                   <th className="p-4 text-left">Email</th>
                   <th className="p-4 text-left">Role</th>
-                  <th className="p-4 text-left">Joined At</th>
+                  {/* <th className="p-4 text-left">Joined At</th> */}
                 </tr>
               </thead>
               <tbody>
@@ -60,9 +60,9 @@ const Dashboard = () => {
                       <td className="p-4">{user.name}</td>
                       <td className="p-4">{user.email}</td>
                       <td className="p-4">{user.role === 1 ? "Admin" : "User"}</td>
-                      <td className="p-4">
+                      {/* <td className="p-4">
                         {user.joinedAt ? user.joinedAt : generateRandomDate()}
-                      </td>
+                      </td> */}
 
                     </tr>
                   ))

@@ -167,24 +167,24 @@ exports.buyPolicy = async (req, res) => {
             });
         }
 
-        const today = new Date();
-        const start = new Date(startDate);
-        const end = new Date(endDate);
+        // const today = new Date();
+        // const start = new Date(startDate);
+        // const end = new Date(endDate);
 
-        if (start < today) {
-            return res.status(400).json({
-                success: false,
-                message: "Start date cannot be before today's date.",
-            });
-        }
+        // if (start < today) {
+        //     return res.status(400).json({
+        //         success: false,
+        //         message: "Start date cannot be before today's date.",
+        //     });
+        // }
 
-        if(start > end)
-        {
-            return res.status(400).json({
-                success: false,
-                message: "Start date cannot be after end date.",
-            });
-        }
+        // if(start > end)
+        // {
+        //     return res.status(400).json({
+        //         success: false,
+        //         message: "Start date cannot be after end date.",
+        //     });
+        // }
 
         // Find the policy
         const policy = await Policy.findById(id);

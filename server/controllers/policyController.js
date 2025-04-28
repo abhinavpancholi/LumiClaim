@@ -6,7 +6,7 @@ const fs = require('fs');
 exports.getPolicies = async (req) => {
     try {
       const policies = await Policy.find();  // Fetch policies from DB
-  
+      console.log(policies);
       if (!policies || policies.length === 0) {
         return {
           success: false,
