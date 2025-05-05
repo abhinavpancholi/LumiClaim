@@ -3,6 +3,7 @@ import axios from 'axios';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useNavigate } from 'react-router-dom';
+// const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
 
 export default function AiAssistant() {
   const [prompt, setPrompt] = useState('');

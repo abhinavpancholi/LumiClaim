@@ -30,7 +30,10 @@ app.use(
 // Connect to Database
 database.connect();
 
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:5173', 'http://frontend:5173'],
+  credentials: true
+}));
 
 // Swagger configuration
 const swaggerOptions = {
